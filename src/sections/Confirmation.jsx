@@ -8,7 +8,7 @@ function Confirmation({ cartItems, handleConfirmation }) {
     <div className='fixed z-10 inset-0 top-0 flex items-center max-sm:items-end justify-center'>
       <div className='bg-black inset-0 opacity-40 absolute'></div>
       <div className='z-50 bg-white max-w-lg w-full p-8 rounded-md'>
-        <img src="../../public/images/icon-order-confirmed.svg" alt="" />
+        <img src="/images/icon-order-confirmed.svg" alt="" />
         <h1 className="mb-2 mt-4 text-4xl font-bold max-sm:max-w-24">Order Confirmed</h1>
         <p className="text-gray-500 mb-8">We hope you enjoy your food!</p>
 
