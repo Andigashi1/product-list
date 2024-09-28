@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Andigashi1/product-list](https://github.com/Andigashi1/product-list)
+- Live Site URL: [https://product-list-neon.vercel.app/](https://product-list-neon.vercel.app/)
 
 ## My process
 
