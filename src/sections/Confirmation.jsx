@@ -13,20 +13,22 @@ function Confirmation({ cartItems, handleConfirmation }) {
         <p className="text-gray-500 mb-8">We hope you enjoy your food!</p>
 
         <div className="bg-rose-100 rounded-md p-4 mb-4">
-          {cartItems.map(item => (
-            <div key={item.id} className="flex border-b-1 border-gray-300 py-4">
-              <img src={item.image.thumbnail} className="max-w-16 rounded-md"/>
 
-              <div className="flex flex-col justify-between pl-4 py-1.5">
-                <p className="font-semibold">{item.name}</p>
-                <div className="flex text-sm">
-                  <p className="text-primary-red font-semibold">{item.quantity}x</p>
-                  <p className="ml-4 text-gray-500">@{item.price.toFixed(2)}</p>
+          <div className='max-h-72 overflow-scroll'>
+            {cartItems.map(item => (
+              <div key={item.id} className="flex border-b-1 border-gray-300 py-4">
+                <img src={item.image.thumbnail} className="max-w-16 rounded-md"/>
+                <div className="flex flex-col justify-between pl-4 py-1.5">
+                  <p className="font-semibold">{item.name}</p>
+                  <div className="flex text-sm">
+                    <p className="text-primary-red font-semibold">{item.quantity}x</p>
+                    <p className="ml-4 text-gray-500">@{item.price.toFixed(2)}</p>
+                  </div>
                 </div>
+                  <p className="ml-auto font-semibold self-center">${item.price * item.quantity}</p>
               </div>
-                <p className="ml-auto font-semibold self-center">${item.price * item.quantity}</p>
-            </div>
-          ))}
+            ))}
+          </div>
 
           <div className="flex justify-between pt-4">
             <p>Order total:</p>

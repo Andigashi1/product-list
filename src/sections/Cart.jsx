@@ -15,12 +15,15 @@ function Cart({ cartItems, removeItem, handleConfirmation }) {
       
       {filteredCarts && cartItems.length ? (
         <div>
-          {filteredCarts.map(item => (
-            <CartItem 
-            key={item.id}
-            item={item}
-            removeItem={removeItem} />
-          ))}
+
+          <div className="max-h-80 overflow-scroll">
+            {filteredCarts.map(item => (
+              <CartItem
+              key={item.id}
+              item={item}
+              removeItem={removeItem} />
+            ))}
+          </div>
           
           <div className="flex justify-between items-center my-4">
             <p className="text-sm">Order Total:</p>
